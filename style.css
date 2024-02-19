@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eff6ff;
+}
+
+header {
+    background: linear-gradient(135deg, #007BFF, #8811C5);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    max-width: 800px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+.intro-text, p {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #007BFF;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    background: #eff6ff;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    max-width: 80%;
+}
+
+#specialHobby {
+    font-weight: bold;
+    color: #8811C5;
+}
+
+/* Skills section styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* More About Me section styles */
+#more {
+    text-align: center;
+    padding: 20px;
+}
+
+#more .links a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#more .links a:hover {
+    background-color: #0056b3;
+}
+
+#more h3, #more p {
+    margin: 10px auto;
+    color: #333;
+    max-width: 80%;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+    
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h2, h3, .intro-text, p {
+        font-size: 16px;
+    }
+}
+
+#projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-container {
+    margin-top: 20px;
+}
+
+.project {
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 80%;
+}
+
+.project h3 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .skills-container {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    section {
+        padding: 50px;
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h2, h3, .intro-text, p {
+        font-size: 20px;
+    }
+}
